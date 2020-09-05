@@ -1,0 +1,26 @@
+<view class="search">
+    <!-- <view>
+//     <swiper class="show-page" indicator-dots="true"  autoplay="false">
+//         <swiper-item>
+//             <image  src="/img/1.jpg"  lazy-load="false" />
+//         </swiper-item>
+//     </swiper>  
+// </view> -->
+    <view class="searchbox">
+        <icon class="search-icon" type="search" size="{{iconSize}}" />
+        <input auto-focus bindinput="bindInput" placeholder="输入关键字或者商品sku" />
+    </view>
+    <progress percent="{{progress}}" active />
+    <button class="search-button" type="primary" bindtap="search" disable="{{disabled}}">
+        点击查询
+    </button>
+</view>
+<view class="title" wx:for="{{items}}" wx:key="*this">
+    {{item.title}}
+    <image class="imgUrl" src="{{item.logoUrl}}" mode='aspectFit' />
+    <view class="detail">
+        <view class="sku">sku：{{item.articleNumber}}</view>
+        <view class="price">价格：{{item.price}}</view>
+        <view class="soldNum">销量：{{item.soldNum}}</view>
+    </view>
+</view>

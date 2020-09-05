@@ -1,0 +1,41 @@
+/**page1.wxss**/
+
+.search{
+  margin: 30rpx;
+}
+
+.searchbox{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.search-button{
+  margin-top: 30rpx;
+}
+
+.search-icon{
+  margin-right: 5rpx;
+}
+
+
+.title{
+  text-align: center;
+font-size: 45rpx;
+margin: 5rpx 25rpx;
+font-weight: 500;
+}
+
+.imgUrl{
+  margin: 10rpx 30rpx;
+text-align: center;
+
+}
+
+
+
+.detail{
+  margin: 10rpx;
+  text-align: center;
+  font-size: 35rpx;
+}
